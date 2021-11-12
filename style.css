@@ -1,0 +1,108 @@
+body{
+    overflow: hidden;
+}
+.aboutCard{
+    /* color: gray inherit; */
+    margin:2% 0% 0% 42%;
+    position: absolute;
+}
+.aboutTitle{
+    font-size:5vw;
+    font-family: 'Pacifico', cursive;
+}
+.about{
+    font-size:1.25vw;
+    margin-top:2%;
+    text-align: justify;
+    width: 75%;
+}
+.imageCard{
+    background: linear-gradient(to top,#F87023,#d4550d);
+    display: flex;
+    background-color: gray;
+    position: relative;
+    height: 60%;
+    width: 80%;
+    filter:saturate(0);
+    /* filter:grayscale(0); */
+    transition: ease-in .5s;
+    animation: updown ease-in 1.5s infinite;
+}
+@keyframes updown{
+    0%{transform:translate(0px,-10px);}
+    50%{transform:translate(0px,0px);}
+    100%{transform:translate(0px,-10px);}
+
+}
+.imageCard:hover{
+    animation-play-state: paused;
+    color: #fff;
+    transition: ease-in .5s;
+    background: linear-gradient(to top,#F87023,#d4550d);
+    filter: saturate(.85);
+    transform:translate(0px,-10px);   
+}
+.smithPhoto{
+    /* margin-top: -7.8%; */
+    margin-left: 4%;
+    position: absolute;
+    min-width: none;
+    bottom: 0;
+    resize: none;
+    height: 120%;
+    width: auto;
+    
+    
+}
+body{
+    cursor:none; 
+    background-color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+    
+}
+.cursor{
+    z-index: 1;
+    position: absolute;
+    border: solid .25vw #000;
+    width: 2vw; 
+    height: 2vw; 
+    border-radius: 100%;  
+    /* background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px); */
+}
+.topBar{
+    display: flex;
+    margin-left: 75%;
+    margin-top: 2%;
+}
+.other{
+    color: rgba(0,0,0,0.4);
+
+}
+.other,.navItem{
+  margin-right: 1vw; 
+  padding: 1vw 1vw 1vw 0vw ; 
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5vw;
+}
+.navItem::after{
+    content: '';
+    display: block;
+    height: 16%;
+    background: #F87023;
+    width: 50%;
+}
+.other::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 16%;
+    background: #F87023;
+    transition: width .3s
+}
+.other:hover,.other:hover::after{  
+    color:#000;
+    width: 25%;
+
+}
