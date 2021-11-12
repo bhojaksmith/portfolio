@@ -1,5 +1,13 @@
 function portfolio(){
-    alert("portfolio clicked")
+    alert("Coming Soon");
+}
+function invisible(){
+    alert('invisible');
+    Swal.fire(
+        'INVISIBLE?',
+        'That thing is still around?',
+        'question'
+      );
 }
 
 jQuery(document).ready(function() {
