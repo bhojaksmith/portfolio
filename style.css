@@ -15,6 +15,13 @@ body{
     margin-top:2%;
     text-align: justify;
     width: 75%;
+    line-height:169%;
+}
+b:hover{
+    color: #000;
+}
+span{
+    text-decoration:underline;
 }
 .imageCard{
     background: linear-gradient(to top,#F87023,#d4550d);
@@ -26,7 +33,7 @@ body{
     filter:saturate(0);
     /* filter:grayscale(0); */
     transition: ease-in .5s;
-    animation: updown ease-in 1.5s infinite;
+    animation: updown ease-in 1.75s infinite;
 }
 @keyframes updown{
     0%{transform:translate(0px,-10px);}
