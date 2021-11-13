@@ -3,11 +3,13 @@ body{
 }
 .bganimation{
     pointer-events: none;
-
+    z-index: -1;
     position: absolute;
     /* border: 1px solid gray; */
-    margin-top: -50%;
+    margin-top: -28%;
+    margin-left:24%;
     transform: rotate(90deg);
+    width: 65%;
 }
 .aboutCard{
     /* color: gray inherit; */
@@ -26,7 +28,7 @@ body{
     line-height:169%;
 }
 b{color: #000;}
-b:hover{
+span,b:hover{
        
     transition: ease-in .5s;
     text-decoration:underline;
@@ -46,6 +48,7 @@ b:hover{
     z-index: -1;
 }
 .imageCard{
+    /* opacity: 0.3; */
     /* background: linear-gradient(to top,#F87023,#d4550d); */
     display: flex;
     /* background-color: gray; */
@@ -146,8 +149,8 @@ body{
 }
 /* .tooltip {
     position: relative;
-    display: inline-block; */
-    /* //border-bottom: 1px dotted black; */
+    display: inline-block;
+    border-bottom: 1px dotted black;
   /* }
   
   .tooltip .tooltiptext {
