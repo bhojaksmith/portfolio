@@ -1,6 +1,14 @@
 body{
     overflow: hidden;
 }
+.bganimation{
+    pointer-events: none;
+
+    position: absolute;
+    border: 1px solid gray;
+    margin-top: -50%;
+    transform: rotate(90deg);
+}
 .aboutCard{
     /* color: gray inherit; */
     margin:2% 0% 0% 42%;
@@ -35,6 +43,7 @@ b:hover{
 .social:hover{
     transition: ease-in .2s;
     color: #d4550d;
+    z-index: -1;
 }
 .imageCard{
     /* background: linear-gradient(to top,#F87023,#d4550d); */
