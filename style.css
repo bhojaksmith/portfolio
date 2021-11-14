@@ -1,8 +1,29 @@
 body{
     overflow: hidden;
 }
+.bganimation3,.bganimation2{
+    display: none !important;
+} 
 @media screen and (max-width: 991px){
-    
+    .bganimation3{
+        transform: rotate(-90deg) !important;
+        display: block !important;
+        /* border: 2px dashed; */
+        margin-top: 96% !important;
+        margin-left:25% !important;
+    }
+    .bganimation2{
+        display: block !important;
+        /* border: 2px solid; */
+        margin-top: 36% !important;
+        margin-left:25% !important;
+    }
+    .bganimation{
+        transform: rotate(-90deg) !important;
+        /* border: 4px dotted; */
+        margin-top: -36% !important;
+        margin-left:24% !important;
+    }
     .cursor{
         display: none;
     }
@@ -19,7 +40,7 @@ body{
     }
     .aboutCard{
         
-        margin:-120% 0% 0% 5% !important;
+        margin:-120% 0% 0% 6% !important;
     }
     .s1{
         height: 5vw !important;
@@ -45,12 +66,14 @@ body{
         font-size: 5vw !important;
     }
     .imageCard{
-    
+        border-radius:5vw !important;
+        margin-left: 7% !important;
+        /* opacity: 0.4; */
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        position: relative;
+        position: absolute;
         height: 110% !important; 
         width: 100% !important;
         /* margin-left: 7% !important; */
@@ -94,6 +117,15 @@ body{
     .other,.navItem{
         font-size: 1.5vw;
     }
+
+.bganimation3,.bganimation2{
+    pointer-events: none;
+    z-index: -1;
+    position: absolute;
+    margin-left:24%;
+    transform: rotate(90deg);
+    width: 65%;
+}
 
 .bganimation{
     pointer-events: none;
