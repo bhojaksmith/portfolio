@@ -1,7 +1,8 @@
 body{
     overflow: hidden;
 }
-.bganimation3,.bganimation2{
+
+.bottomBar,.bganimation3,.bganimation2{
     display: none !important;
 } 
 @media screen and (max-width: 991px){
@@ -83,6 +84,29 @@ body{
         background: linear-gradient(to top,#F87023,#d4550d);
         filter: saturate(.85);
     }
+    .bottomBar {
+        
+        /* align-items: center; */
+        justify-content: center;
+        display: flex !important;
+        z-index: 1;
+        padding: 3% !important;
+        font-size: 5vw;
+        position: fixed;
+        left: 0%;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(255,255,255,0.5);
+        backdrop-filter: blur(24px);
+        color: black;
+        text-align: center !important;
+     }
+     .contact{
+        display:none;
+     }
+     .navItem,.other{
+        margin-left: 4vw;
+     }
 }
 /* Mobile CSS ABOVE */
     .aboutTitle{

@@ -46,3 +46,10 @@ jQuery(document).ready(function() {
     }, 20);
 
 });
+
+$(document).ready(function(){
+    $(".showSocial").click(function(){
+      $(".social").slideToggle();
+      $(".social").toggle();
+    });
+  });
