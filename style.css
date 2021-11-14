@@ -1,6 +1,100 @@
 body{
     overflow: hidden;
 }
+@media screen and (max-width: 991px){
+    
+    .cursor{
+        display: none;
+    }
+    .topBar{
+        display: none !important;
+    }
+    .aboutTitle{
+        font-size:15vw !important;
+    }
+    .about{
+        width: 90% !important;
+        font-size:5vw !important;
+        position: relative !important;
+    }
+    .aboutCard{
+        
+        margin:-120% 0% 0% 5% !important;
+    }
+    .s1{
+        height: 5vw !important;
+    }
+    
+    .s1{
+        height: 8vw !important;
+        padding: 2vw 2vw 1vw 2vw;
+    }
+    .social{
+        height: 0.5vw;
+    }
+    .social:hover{
+        transition: ease-in .2s;
+        color: #d4550d;
+        z-index: -1;
+    }
+    .smithPhoto{
+        margin-left: -40% !important;
+        height: 55% !important;
+    }
+    .other,.navItem{
+        font-size: 5vw !important;
+    }
+    .imageCard{
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 110% !important; 
+        width: 100% !important;
+        /* margin-left: 7% !important; */
+        color: #fff;
+        transition: ease-in .5s;
+        /* animation: updown ease-in 1.75s infinite; */
+        background: linear-gradient(to top,#F87023,#d4550d);
+        filter: saturate(.85);
+    }
+}
+/* Mobile CSS ABOVE */
+    .aboutTitle{
+        font-size:5vw;
+    }
+    .about{
+        font-size:1.25vw;
+    }
+    .s1{
+        height: 1.5vw;
+    }
+    span,b:hover{
+       
+        transition: ease-in .5s;
+        text-decoration:underline;
+    }
+    .s1{
+        height: 1.5vw;
+        padding: 2vw 2vw 1vw 2vw;
+    }
+    .social{
+        height: 0.5vw;
+    }
+    .social:hover{
+        transition: ease-in .2s;
+        color: #d4550d;
+        z-index: -1;
+    }
+    .smithPhoto{
+        height: 120%;
+    }
+    .other,.navItem{
+        font-size: 1.5vw;
+    }
+
 .bganimation{
     pointer-events: none;
     z-index: -1;
@@ -17,58 +111,34 @@ body{
     position: absolute;
 }
 .aboutTitle{
-    font-size:5vw;
     font-family: 'Pacifico', cursive;
 }
 .about{
-    font-size:1.25vw;
+    
     margin-top:2%;
     text-align: justify;
     width: 75%;
     line-height:169%;
 }
 b{color: #000;}
-span,b:hover{
-       
-    transition: ease-in .5s;
-    text-decoration:underline;
-}
-.s1{
-    height: 1.5vw;
-    padding: 2vw 2vw 1vw 2vw;
-    
 
-}
-.social{
-    height: 0.5vw;
-}
-.social:hover{
-    transition: ease-in .2s;
-    color: #d4550d;
-    z-index: -1;
-}
 .imageCard{
-    /* opacity: 0.3; */
-    /* background: linear-gradient(to top,#F87023,#d4550d); */
+    
     display: flex;
-    /* background-color: gray; */
     position: relative;
     height: 60%;
     width: 80%;
     color: #fff;
-    /* filter:saturate(0); */
-    /* filter:grayscale(0); */
     transition: ease-in .5s;
     /* animation: updown ease-in 1.75s infinite; */
     background: linear-gradient(to top,#F87023,#d4550d);
     filter: saturate(.85);
 }
-@keyframes updown{
+/* @keyframes updown{
     0%{transform:translate(0px,-10px);}
     50%{transform:translate(0px,0px);}
     100%{transform:translate(0px,-10px);}
-
-}
+} */
 .imageCard:hover{
     animation-play-state: paused;
     color: #fff;
@@ -84,10 +154,8 @@ span,b:hover{
     min-width: none;
     bottom: 0;
     resize: none;
-    height: 120%;
-    width: auto;
     
-    
+    width: auto;   
 }
 body{
     cursor:none; 
@@ -125,7 +193,7 @@ body{
   padding: 1vw 1vw 1vw 0vw ; 
   text-align: left;
   font-weight: 600;
-  font-size: 1.5vw;
+  
 }
 .navItem::after{
     content: '';
@@ -147,29 +215,3 @@ body{
     width: 25%;
 
 }
-/* .tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-  /* }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-     */
-    /* Position the tooltip */
-    /* position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%;
-    margin-left: -60px;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-  } */
