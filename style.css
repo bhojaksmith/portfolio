@@ -1,11 +1,13 @@
 body{
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .bottomBar,.bganimation3,.bganimation2{
     display: none !important;
 } 
-@media screen and (max-width: 991px){
+
+
+@media screen and (max-width: 991px) {
     .bganimation3{
         transform: rotate(-90deg) !important;
         display: block !important;
@@ -104,9 +106,55 @@ body{
      .contact{
         display:none;
      }
-     .navItem,.other{
+    
+     .other{
         margin-left: 4vw;
      }
+}
+/* Below For Smoll itty bitty Screens */
+@media screen and (max-width: 416px){
+
+.aboutTitle{
+    font-size:15vw !important;
+}
+.about{
+    width: 90% !important;
+    font-size:5vw !important;
+    position: relative !important;
+}
+.aboutCard{
+    
+    margin:-100% 0% 0% 4% !important;
+}
+.smithPhoto{
+    margin-left: -32% !important;
+    height: 50% !important;
+}
+.other,.navItem{
+    font-size: 5vw !important;
+}
+.imageCard{
+    border-radius:5vw !important;
+    margin-left: 0% !important;
+    /* opacity: 0.4; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 110% !important; 
+    width: 100% !important;
+    /* margin-left: 7% !important; */
+    color: #fff;
+    transition: ease-in .5s;
+    /* animation: updown ease-in 1.75s infinite; */
+    background: linear-gradient(to top,#F87023,#d4550d);
+    filter: saturate(.85);
+}
+
+
+ /* Above For Smoll itty bitty Screens */
+
 }
 /* Mobile CSS ABOVE */
     .aboutTitle{
