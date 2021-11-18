@@ -8,7 +8,12 @@ body{
     display: none !important;
 } 
 
-
+::selection {
+    background: #41ab7d; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #41ab7d; /* Gecko Browsers */
+  }
 @media screen and (max-width: 991px) and (orientation: portrait) {
     .bganimation3{
         transform: rotate(-90deg) !important;
@@ -60,7 +65,7 @@ body{
     }
     .social:hover{
         transition: ease-in .2s;
-        color: #d4550d;
+        color: #41ab7d;
         z-index: -1;
     }
     .smithPhoto{
@@ -86,7 +91,7 @@ body{
         color: #fff;
         transition: ease-in .5s;
         /* animation: updown ease-in 1.75s infinite; */
-        background: linear-gradient(to top,#F87023,#d4550d);
+        background: linear-gradient(to right,#67dba9,#41ab7d);
         filter: saturate(.85);
     }
     .bottomBar::before{
@@ -134,7 +139,7 @@ body{
         
     }
     .about{
-        font-size:4.1vw !important;
+        font-size:4.1   vw !important;
     }
     .imageCard{
         top:-15 !important;
@@ -197,7 +202,7 @@ body{
     }
     .social:hover{
         transition: ease-in .2s;
-        color: #d4550d;
+        color: #41ab7d;
         z-index: -1;
     }
     .smithPhoto{
@@ -252,7 +257,7 @@ b{color: #000;}
     color: #fff;
     transition: ease-in .5s;
     /* animation: updown ease-in 1.75s infinite; */
-    background: linear-gradient(to top,#F87023,#d4550d);
+    background: linear-gradient(to right,#67dba9,#41ab7d);
     filter: saturate(.85);
 }
 /* @keyframes updown{
@@ -264,7 +269,6 @@ b{color: #000;}
     animation-play-state: paused;
     color: #fff;
     transition: ease-in .5s;
-    background: linear-gradient(to top,#F87023,#d4550d);
     filter: saturate(.85);
     /* transform:translate(0px,-10px);    */
 }
@@ -291,8 +295,6 @@ body{
     width: 2vw; 
     height: 2vw; 
     border-radius: 100%;  
-    /* background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(2px); */
 }
 .topBar{
     display: flex;
@@ -310,6 +312,7 @@ body{
 
 }
 .other,.navItem{
+  font-size: 1.5vw;
   margin-right: 1vw; 
   padding: 1vw 1vw 1vw 0vw ; 
   text-align: left;
@@ -320,7 +323,7 @@ body{
     content: '';
     display: block;
     height: 16%;
-    background: #F87023;
+    background: #41ab7d;
     width: 50%;
 }
 .other::after{
@@ -328,11 +331,13 @@ body{
     display: block;
     width: 0;
     height: 16%;
-    background: #F87023;
+    background: #41ab7d;
     transition: width .3s
 }
-.other:hover,.other:hover::after{  
+ .other:hover{
     color:#000;
-    width: 25%;
-
-}
+  }
+  .other:hover::after{  
+      width: 25%;
+  
+  }

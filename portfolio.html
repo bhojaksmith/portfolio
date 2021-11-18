@@ -1,24 +1,13 @@
-<meta name="viewport" 
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--V1.1-->
-<div class="bganimation">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_jpy7ecto.json"  background="rgba(4, 4, 4, 0)"  speed="1"  style="width: 1920px; height: 1080px;"  loop autoplay></lottie-player> -->
-    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ein9dosv.json"  background="rgba(4, 4, 4, 0)" style="color: #41ab7d;" speed="0.35" loop autoplay></lottie-player>
-</div>
-<div class="bganimation2">
-    <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_jpy7ecto.json"  background="rgba(4, 4, 4, 0)"  speed="1"  style="width: 1920px; height: 1080px;"  loop autoplay></lottie-player> -->
-    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ein9dosv.json"  background="rgba(4, 4, 4, 0)"  speed="0.20" loop autoplay></lottie-player>
-</div>
-<div class="bganimation3">
-    <!-- <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_jpy7ecto.json"  background="rgba(4, 4, 4, 0)"  speed="1"  style="width: 1920px; height: 1080px;"  loop autoplay></lottie-player> -->
-    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ein9dosv.json"  background="rgba(4, 4, 4, 0)"  speed="0.35" loop autoplay></lottie-player>
-</div>
+<link href="portfolio.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="cursor.js"></script>
+
+<body>
 <div class="cursor"></div>    
 <div class="topBar">
     <div class="nav">
-        <div class="navItem">ABOUT</div>
-        <div class="other" onclick="portfolio()">PORTFOLIO</div>
+        <div class="other" onclick="about()">ABOUT</div>
+        <div class="navItem" >PORTFOLIO</div>
     </div>
     <div class="contact tooltip">
         <span class="social"><svg  class='s1' aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" class="svg-inline--fa fa-linkedin-in fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg></span>
@@ -28,8 +17,8 @@
 </div>
 
 <div class="bottomBar">
-    <div class="navItem">ABOUT</div>
-    <div class="other" onclick="portfolio()">PORTFOLIO</div>
+    <div class="other">ABOUT</div>
+    <div class="navItem" onclick="about()">PORTFOLIO</div>
     <div class="other showSocial">CONTACT</div>
     
     <div class="contact">
@@ -39,29 +28,15 @@
     </div>
 
 </div>
+<h1>
+    hello
+</h1>
+</body>
 
-<div class="imageCard" style="border-radius:2.5vw ;
-margin:8% 0%  0% 10%;">
-    <div class="aboutCard">
-        <div class="aboutTitle">Smith Bhojak</div>
-        <div class="about">A Passionate Designer, who believes <b onclick="invisible()">"Great User 
-            Experience should be <span>invisible</span>"</b> <br> <br>
-            Love working in fast paced environments and 
-            engaging in challenging exercises that force me to get out of my comfort zone
-        </div>
-    </div>
-    <div>
-        <img src="assets/profilePhoto.png" class="smithPhoto">
-    </div>
-</div>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-
-
-
-<link href="style.css" rel="stylesheet">
+<lottie-player  class='bganimation' src="https://assets1.lottiefiles.com/packages/lf20_9tvfzp4o.json"  background="transparent"  speed="0.05"   loop  autoplay></lottie-player>
 <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="script.js"></script>
-<script src="cursor.js"></script>
+<script src="portfolio.js"></script>
