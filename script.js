@@ -8,17 +8,20 @@ function portfolio(){
     // other[0].style.color = 'black';
     // navItem[0].style.color = 'rgba(0,0,0,0.4)'   
     window.open("portfolio.html","_self")
-    swal("I am still working on this one!");
+    
+    
  
 }
 function invisible(){
+    document.body.style.cursor = "pointer";
     // alert('invisible called');
     swal(
         'Invisible UX?',
         'Users will complain about Bad UX & Praise Good UX, But Great UX is always invisible',
-        
-        
-      );
+      ).then(function() {
+        document.body.style.cursor = "none";
+    });
+ 
 }
 // const el = document.querySelector(".imageCard");
 
