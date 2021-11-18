@@ -1,5 +1,7 @@
 body{
-    overflow: hidden !important;
+    /* overflow-x: hidden !important;
+    overflow-y: visible; */
+    overflow:hidden;
 }
 
 .bottomBar,.bganimation3,.bganimation2{
@@ -7,7 +9,7 @@ body{
 } 
 
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (orientation: portrait) {
     .bganimation3{
         transform: rotate(-90deg) !important;
         display: block !important;
@@ -42,8 +44,8 @@ body{
         position: relative !important;
     }
     .aboutCard{
-        
-        margin:-120% 0% 0% 6% !important;
+        top:0 !important;
+        margin:0% 0% 0% 6% !important;
     }
     .s1{
         height: 5vw !important;
@@ -62,20 +64,21 @@ body{
         z-index: -1;
     }
     .smithPhoto{
-        margin-left: -40% !important;
-        height: 55% !important;
+    
+        margin-left:12% !important;
+        height: 52% !important;
     }
     .other,.navItem{
         font-size: 5vw !important;
     }
     .imageCard{
         border-radius:5vw !important;
-        margin-left: 7% !important;
+        margin-left: 0% !important;
         /* opacity: 0.4; */
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        align-items: center !important;
+        /* justify-content: center !important; */
         position: absolute;
         height: 110% !important; 
         width: 100% !important;
@@ -86,9 +89,20 @@ body{
         background: linear-gradient(to top,#F87023,#d4550d);
         filter: saturate(.85);
     }
+    .bottomBar::before{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(24px);
+        z-index: -1;
+    }
     .bottomBar {
         
-        /* align-items: center; */
+        align-items: center;
         justify-content: center;
         display: flex !important;
         z-index: 1;
@@ -111,45 +125,48 @@ body{
         margin-left: 4vw;
      }
 }
+@media screen and (max-width: 320px){
+    .smithPhoto{
+        /* position: relative !important; */
+        /* border: 2px solid black; */
+        margin-left: 20% !important;
+        height: 50% !important;
+        
+    }
+    .about{
+        font-size:4.1vw !important;
+    }
+    .imageCard{
+        top:-15 !important;
+    }
+}
 /* Below For Smoll itty bitty Screens */
-@media screen and (max-width: 416px){
+@media screen and (max-width: 410px) and (min-width: 321){
 
 .aboutTitle{
-    font-size:15vw !important;
+    font-size:13vw !important;
 }
 .about{
+    align-items: center;
     width: 90% !important;
-    font-size:5vw !important;
+    font-size:4.8vw !important;
     position: relative !important;
 }
 .aboutCard{
-    
-    margin:-100% 0% 0% 4% !important;
+
+ display: flex;
+ flex-direction: column;
+ align-items: stretch;
 }
 .smithPhoto{
-    margin-left: -32% !important;
+    /* position: relative !important; */
+    /* border: 2px solid black; */
+    margin-left: 20% !important;
     height: 50% !important;
+    
 }
 .other,.navItem{
     font-size: 5vw !important;
-}
-.imageCard{
-    border-radius:5vw !important;
-    margin-left: 0% !important;
-    /* opacity: 0.4; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    height: 110% !important; 
-    width: 100% !important;
-    /* margin-left: 7% !important; */
-    color: #fff;
-    transition: ease-in .5s;
-    /* animation: updown ease-in 1.75s infinite; */
-    background: linear-gradient(to top,#F87023,#d4550d);
-    filter: saturate(.85);
 }
 
 
