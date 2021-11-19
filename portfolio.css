@@ -169,3 +169,7 @@ color:#000;
          display: none !important;
      }
 }
+a{
+    color: black;
+    cursor: none;
+}
