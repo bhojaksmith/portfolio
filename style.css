@@ -106,7 +106,6 @@ body{
         z-index: -1;
     }
     .bottomBar {
-        
         align-items: center;
         justify-content: center;
         display: flex !important;
@@ -342,4 +341,9 @@ body{
   .other:hover::after{  
       width: 25%;
   
+  }
+
+  a{
+      color: black;
+      cursor: none;
   }
