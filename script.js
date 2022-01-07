@@ -21,7 +21,7 @@ document.addEventListener('mousemove', function(e) {
 document.addEventListener('mousemove', function(e) {
   let xAxis = (window.innerWidth  - e.pageX) / 100;
   let yAxis = (window.innerHeight  - e.pageY) / 100;
-  imageCard.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
+  imageCard.style.transform = `translateY(${xAxis}px)  translateX(${yAxis}px)`;
 });
 document.addEventListener('mousemove', function(e) {
   let xAxis = (window.innerWidth  - e.pageX) / 50;

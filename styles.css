@@ -74,6 +74,8 @@ b:hover{
 .other,.navItem{
   cursor: none !important;
   font-size: 1.5vw;
+  padding: 1%;
+  text-align: center;
 }
 .bganimation{
   pointer-events: none;
@@ -135,7 +137,7 @@ nav{
 .other,.navItem{
 font-size: 1.5vw;
 margin-right: 1vw; 
-padding: 1vw 1vw 1vw 0vw ; 
+padding: 2%; 
 text-align: left;
 font-weight: 600;
 

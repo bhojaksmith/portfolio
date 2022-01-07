@@ -196,7 +196,9 @@ a{
 }
 .caseDescription{
     padding-bottom: 5%;
-    color:rgba(255,255,255,0.6);
+    color:rgba(255,255,255,0.8);
+    transition: 300ms ease-in-out;
+    text-align: justify;
 }
 .caseLink{
     font-style: italic;
@@ -214,9 +216,9 @@ a{
     box-shadow: 8px 8px 24px rgba(0,0,0,0.4); 
     filter: saturate(1);
 }
-/* .case:hover >  .caseDetails > .caseTitle { 
-    font-size: 2.25vw;
-} */
+.case:hover >  .caseDetails  { 
+    color: #000;
+}
 .case:hover > .caseDetails > .caseLink { 
     cursor: pointer;
     color: #000;
@@ -229,6 +231,6 @@ a{
     padding-left:1.25% ;
     color: #000;
 }
-/* .case:hover > .caseDetails > .caseDescription { 
-    color:white;
-} */
+.case:hover > .caseDetails > .caseDescription { 
+    color:#000;
+}
