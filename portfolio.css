@@ -128,6 +128,9 @@ a{
     color: #41ab7d;
     z-index: -1;
 }
+.content{
+    margin-top: 2% !important;
+}
 @media screen and (max-width: 991px) and (orientation: portrait) {
     .bb{
         padding :2%;
@@ -139,7 +142,7 @@ a{
         display: none !important;
     }
     .content{
-        margin-top: 0% !important;
+        margin-top: 2% !important;
     }
     .bottomBar::before{
         content: '';
@@ -175,12 +178,7 @@ a{
     
     text-decoration:none ;
 }
-.heading-5-copy:hover{
-    transition: ease-in 0.2s;
-    /* cursor: pointer; */
-    background-color: black;
-    color :white !important;
-}
+
 .case{
 
     transition: 300ms ease-in-out;
@@ -189,15 +187,7 @@ a{
     display: flex;
     align-items: start;
     justify-content: center;
-    padding-bottom:5% ;
-}
-.case:hover > .caseImage { 
-    border-radius: 24px;
-    width: 26vw;
-    box-shadow: 8px 8px 24px rgba(0,0,0,0.4); 
-}
-.case:hover > .caseTitle { 
-    font-size: 2.25vw;
+    margin-bottom:5% ;
 }
 
 
@@ -206,6 +196,7 @@ a{
     border-radius: 16px;
     width: 25vw;
     box-shadow: 8px 8px 24px rgba(0,0,0,0.2);
+    filter: saturate(0);
 }
 .caseDetails{
     
@@ -220,6 +211,7 @@ a{
     padding-bottom: 5%;
     font-size: 2vw;
     font-weight: bold;
+    transition: 300ms ease-in-out;
 }
 .caseDescription{
     padding-bottom: 5%;
@@ -231,9 +223,22 @@ a{
     color:rgba(255,255,255,0.6);
     transition: 300ms ease-in-out;
 }
-.caseLink:hover{
-    color:white;
-}
 .caseBox{
     border:1px solid ;
 }
+.case:hover > .caseImage {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 24px rgba(0,0,0,0.4); 
+    filter: saturate(1);
+}
+/* .case:hover >  .caseDetails > .caseTitle { 
+    font-size: 2.25vw;
+} */
+.case:hover > .caseDetails > .caseLink { 
+    color:black;
+    font-weight: bold;
+    font-size: 0.8vw;
+}
+/* .case:hover > .caseDetails > .caseDescription { 
+    color:white;
+} */
