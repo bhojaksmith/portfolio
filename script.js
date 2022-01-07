@@ -1,18 +1,21 @@
-const swup = new Swup()
-function portfolio(){
-   // alert('Coming Soon');
-    // var about=document.getElementsByClassName('imageCard');
-    // alert(about[0]);
-    // about[0].style.display= "none"; 
-    // navItem = document.getElementsByClassName('navItem');
-    // other = document.getElementsByClassName('other');
-    // other[0].style.color = 'black';
-    // navItem[0].style.color = 'rgba(0,0,0,0.4)'   
-    window.open("portfolio.html","_self")
-    
-    
- 
-}
+// const swup = new Swup()
+
+// let threeD = document.querySelector('.threeD');
+
+// document.addEventListener('mousemove', function(e) {
+//   let xAxis = (window.innerWidth / 0.5 - e.pageX) / 10;
+//   let yAxis = (window.innerHeight / 0.5 - e.pageY) / 5;
+//   threeD.style.transform = `rotateY(${xAxis}deg)  rotateX(${yAxis}deg)`;
+// });
+
+let smithPhoto = document.querySelector('.smithPhoto');
+
+document.addEventListener('mousemove', function(e) {
+  let xAxis = (window.innerWidth  - e.pageX) / 50;
+  let yAxis = (window.innerHeight  - e.pageY) / 50;
+  smithPhoto.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
+});
+
 function invisible(){
     document.body.style.cursor = "pointer";
     // alert('invisible called');
@@ -24,13 +27,3 @@ function invisible(){
     });
  
 }
-// const el = document.querySelector(".imageCard");
-
-// el.addEventListener("mousemove", (e) => {
-//     let x = e.offsetX/100 + 'px';
-//     let y = e.offsetY/100 + 'px';
-//     console.log(x,y);
-//     el.style.transform = "translateX(x)";
-// //   el.style.transform = "translate('e.offsetX','e.offsetY')" ;
-// });
-
