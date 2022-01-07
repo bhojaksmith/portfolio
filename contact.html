@@ -1,12 +1,6 @@
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
-    document.body.style.cursor = "pointer";
-    swal(
-        'You caught me!',
-        'I am still working on this',
-      ).then(function() {
-        document.body.style.cursor = "none";
-    });
+   
 </script>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,12 +16,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=0" >
   <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>   -->
   <script defer src="script.js"></script>
-  <script defer src="cursor.js"></script>
+  
   <link href="styles.css" rel="stylesheet">
   <title>Smith Bhojak</title>
 </head>
 <body style="cursor: pointer;">
-    
+    <div class="cursor"></div> 
     <nav>
       <div class="nav">
         <div class="other"><a href="index.html">ABOUT</a></div>
@@ -35,9 +29,11 @@
         <div class="navItem" style="cursor: pointer !important;">CONTACT</div>
         
     </nav>
-    <center>
-        <h1>You caught me!,</h1>
-        <h3 style="color: rgba(0, 0, 0,0.4);">I am still working on this'</h3>
+    <center class="contactDummy">
+        <h1>You caught me!</h1>
+        <h3 style="color: rgba(255, 255, 255,0.8); font-weight: 100;">I am still working on this</h3>
     </center>
     
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="cursor.js"></script>
