@@ -8,20 +8,25 @@
 //   threeD.style.transform = `rotateY(${xAxis}deg)  rotateX(${yAxis}deg)`;
 // });
 
+let imageCard = document.querySelector('.imageCard');
 let smithPhoto = document.querySelector('.smithPhoto');
-let contactDummy = document.querySelector('.contactDummy');
+let threeDmove = document.querySelector('.threeDmove');
 
 document.addEventListener('mousemove', function(e) {
   let xAxis = (window.innerWidth  - e.pageX) / 50;
   let yAxis = (window.innerHeight  - e.pageY) / 50;
   smithPhoto.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
+});
 
+document.addEventListener('mousemove', function(e) {
+  let xAxis = (window.innerWidth  - e.pageX) / 100;
+  let yAxis = (window.innerHeight  - e.pageY) / 100;
+  imageCard.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
 });
 document.addEventListener('mousemove', function(e) {
   let xAxis = (window.innerWidth  - e.pageX) / 50;
   let yAxis = (window.innerHeight  - e.pageY) / 50;
-  contactDummy.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
-
+  threeDmove.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
 });
 
 function invisible(){
