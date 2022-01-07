@@ -1,53 +1,48 @@
-body{
-    background-color: #f0f0f0;
-    font-family: 'Inter', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-}
-::selection {
-    background: #41ab7d; /* WebKit/Blink Browsers */
-  }
-  ::-moz-selection {
-    background: #41ab7d; /* Gecko Browsers */
-  }
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-
+    background: #e5e5e5e5; 
   }
-    
+   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #67dba9; 
-    border-radius: 24vw;
-
+    background: #202020; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #41ab7d; 
+    background: #555; 
   }
+body{
+    background-color: #f0f0f0;
+    font-family: 'Inter', sans-serif;
+   cursor:none;
+    margin: 0;
+    /* cursor: none; */
+}
     .content{
+        
+        overflow-y: visible;
         margin-top: 10% !important;
         background-color: rgba(0,0,0,0) !important;
         /* opacity: 0.2 !important; */
       z-index:1 !important;
   }
 .bganimation{
+    display: none;
     top:0;
     position: absolute;
     transform: rotate(-90deg) !important;
     pointer-events: none;
     z-index: -1;
-    border: 10px solid gray;
+  
     height: 210%;
 }
-/* .cursor{
+.cursor{
     z-index: 2;
     position: absolute;
     border: solid .25vw #000;
@@ -55,7 +50,7 @@ body{
     height: 2vw; 
     border-radius: 100%;  
     background-color: rgba(255,255,255,0.5);
-} */
+}
 .bottomBar{
     display: none;
 }
@@ -66,11 +61,10 @@ body{
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 2% 10%;
     background-color: #f0f0f0;    
     z-index: 1;
-    /* border :1px solid black; */
 }
 
 .nav{
@@ -113,10 +107,7 @@ color:#000;
 }
   .s1{
     height: 1.5vw;
-    padding: 2vw 2vw 1vw 2vw;
-}
-.social{
-    height: 0.5vw;
+    padding: 1vw;
 }
 .social:hover{
     transition: ease-in .2s;
@@ -171,9 +162,43 @@ a{
     cursor: none;
     text-decoration:none ;
 }
-a:hover,.heading-5-copy:hover{
+.heading-5-copy:hover{
     transition: ease-in 0.2s;
     cursor: pointer;
     background-color: black;
     color :white !important;
+}
+.case{
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding-bottom:5% ;
+}
+.caseImage{
+    border-radius: 24px;
+    width: 25vw;
+    box-shadow: 8px 8px 24px rgba(0,0,0,0.2);
+}
+.caseDetails{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0% 2%;
+    
+}
+.caseTitle{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.caseDescription{
+    color:#999;
+}
+.caseLink{
+    font-style: italic;
+    font-size: 0.8vw;
+}
+.caseBox{
+    border:1px solid ;
 }

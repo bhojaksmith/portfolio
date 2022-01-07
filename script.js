@@ -1,3 +1,4 @@
+const swup = new Swup()
 function portfolio(){
    // alert('Coming Soon');
     // var about=document.getElementsByClassName('imageCard');

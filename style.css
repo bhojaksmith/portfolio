@@ -60,14 +60,7 @@ body{
         height: 8vw !important;
         padding: 2vw 2vw 1vw 2vw;
     }
-    .social{
-        height: 0.5vw;
-    }
-    .social:hover{
-        transition: ease-in .2s;
-        color: #41ab7d;
-        z-index: -1;
-    }
+   
     .smithPhoto{
     
         margin-left:12% !important;
