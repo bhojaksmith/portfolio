@@ -71,7 +71,7 @@ a{
 .link:hover > .arrow{
   animation-play-state: paused;
   transition: 150ms ease-in-out;
-  padding-left:1.25% ;
+  margin-left:1.25% ;
 }
 
 .aboutTitle{
