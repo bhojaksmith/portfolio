@@ -176,3 +176,12 @@ a{
   color: inherit;  
     
 }
+.link{
+  color: #000;
+  font-weight: bold;
+}
+.link:hover > .arrow{
+    
+  transition: 150ms ease-in-out;
+  padding-left:1.25% ;
+}
