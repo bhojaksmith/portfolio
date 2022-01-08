@@ -79,7 +79,7 @@ body{
     color: inherit;  
       
   }
-  
+
 .case{
     border-radius: 1vw;
     transition: 300ms ease-in-out;
@@ -118,8 +118,7 @@ body{
     transition: 300ms ease-in-out;
 }
 .caseDescription{
-    padding-bottom: 10%;
-    
+    padding-bottom: 10%; 
     transition: 300ms ease-in-out;
     text-align: justify;
 }
@@ -127,7 +126,6 @@ body{
     font-style: italic;
     font-size: 1vw;
     color:rgba(0,0,0,0.4);
-    
     display: inline;
     font-weight: bold;
 }
@@ -164,3 +162,250 @@ body{
 .case:hover{
     box-shadow: 8px 8px 24px rgba(0,0,0,0.2); 
 }
+
+
+/* Extra small devices (phones, 345px and up) */
+
+@media only screen and (max-width:355px) {
+    /* *** Mobile Standard 0 STARTS *** */
+    
+    
+     /* XXX Mobile MAX 441 ENDS XXX */
+   }
+  
+  
+  @media only screen and (max-width:441px)  {
+    /* *** Mobile Standard 0 STARTS *** */
+    .case{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        padding: 1% 0% ;
+        margin:2% 0% ;
+
+    }
+    .case:hover > .caseImage {
+        transform: scale(1.09);
+        /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
+        filter: saturate(1);
+    }
+
+    .caseImage{
+        
+        border-radius: 1.0vw;
+        width: 40vw;
+        margin: 0% 0%;
+    }
+    .caseDetails{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 2.25vw;
+        margin: 2% 6%  0% 6%;
+        
+    }
+    .caseTitle{
+        font-size: 2vw;
+    }
+    .caseLink{
+        
+        font-size: 1.8vw;
+    }
+  
+  }
+  
+  @media only screen and (min-width:441px) and  (max-width: 599px) {
+   /* *** Mobile Standard 441 STARTS *** */
+   .case{
+        
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1% 0% ;
+        margin:2% 18% ;
+
+    }
+
+
+    .caseImage{
+        
+        border-radius: 1.0vw;
+        width: 25vw;
+        margin: 0% 2%;
+    }
+    .caseDetails{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5vw;
+        margin: 0% 2%;
+        
+    }
+    .caseTitle{
+        font-size: 2vw;
+    }
+    .caseLink{
+        
+        font-size: 1.5vw;
+    }
+  
+   /* XXX Mobile MAX 600 ENDS XXX */
+  }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 600px) {
+      /* *** Mobile Standard 600 STARTS *** */
+    .case{
+        
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1% 0% ;
+        margin:2% 20% ;
+
+    }
+
+
+    .caseImage{
+        
+        border-radius: 1.5vw;
+        width: 25vw;
+        margin: 0% 2%;
+    }
+    .caseDetails{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5vw;
+        margin: 0% 2%;
+        
+    }
+    .caseTitle{
+        font-size: 2vw;
+    }
+    .caseLink{
+        
+        font-size: 1vw;
+    }
+       /* XXX Mobile 600 ENSD XXX */
+  }
+  
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    /* *** Desktop 768 STARTS *** */
+    .case{
+        
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1% 0% ;
+        margin:2% 23% ;
+
+    }
+
+
+    .caseImage{
+        
+        border-radius: 1.5vw;
+        width: 25vw;
+        margin: 0% 2%;
+    }
+    .caseDetails{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 1.25vw;
+        margin: 0% 2%;
+        
+    }
+    .caseTitle{
+        font-size: 2vw;
+    }
+    .caseLink{
+        
+        font-size: 1vw;
+    }
+    
+     /* XXX Desktop 768 STARTS XXX */
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+   /* *** Desktop 992 STARTS *** */
+   .case{
+        
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1% 0% ;
+        margin:2% 23% ;
+
+    }
+
+
+    .caseImage{
+        
+        border-radius: 1.5vw;
+        width: 25vw;
+        margin: 0% 2%;
+    }
+    .caseDetails{
+        
+        display: flex;
+        flex-direction: column;
+        font-size: 1.25vw;
+        margin: 0% 2%;
+        
+    }
+    .caseTitle{
+        font-size: 2vw;
+    }
+    .caseLink{
+        
+        font-size: 1vw;
+    }
+  /* XXX Desktop 992 ENDS XXX */
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    /* *** Desktop 1200 STARTS *** */
+   
+    .case{
+        
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 1% 0% ;
+        margin:2% 23% ;
+    
+    }
+    
+    
+    .caseImage{
+        
+        border-radius: 1.5vw;
+        width: 25vw;
+        margin: 0% 2%;
+    }
+    .caseDetails{
+        
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        font-size: 1vw;
+        margin: 0% 2%;
+        
+    }
+    .caseTitle{
+        font-size: 2vw;
+    }
+    .caseLink{
+        
+        font-size: 1vw;
+    }
+    /* XXX Desktop 1200 ENDS XXX */
+  }
+  
