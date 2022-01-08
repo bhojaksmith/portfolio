@@ -15,7 +15,7 @@ let threeDmove = document.querySelector('.threeDmove');
 document.addEventListener('mousemove', function(e) {
   let xAxis = (window.innerWidth  - e.pageX) / 50;
   let yAxis = (window.innerHeight  - e.pageY) / 50;
-  smithPhoto.style.transform = `translateY(${yAxis}px)  translateX(${xAxis}px)`;
+  smithPhoto.style.transform = `translateY(${yAxis}px) translateX(${xAxis}px)`;
 });
 
 document.addEventListener('mousemove', function(e) {

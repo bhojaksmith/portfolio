@@ -1,8 +1,13 @@
 .contactDummy{
   color: white;
 }
+@keyframes arrowBounce{
+  0%{padding-left:0%}
+  50%{padding-left: 1.25%;}
+  100%{padding-left: 0%;}
+}
 body{
-
+  
   background: linear-gradient(to right,#67dba9,#41ab7d);
 
   background-color: #67dba9;
@@ -29,6 +34,8 @@ span{
 b{
   color: black;
 }
+
+
 .bottomBar,.bganimation3,.bganimation2{
   display: none !important;
 } 
@@ -41,9 +48,11 @@ b{
 }
 
 .aboutTitle{
+  transition: 300ms ease-in;
   font-size:5vw;
 }
 .about{
+  transition: 300ms ease-in;
   font-size:1.25vw;
 }
 .s1{
@@ -67,12 +76,13 @@ b:hover{
 }
 .smithPhoto{
   transform-style: preserve-3d;
-    margin-left: 8%;
-    width: 32%;
+  margin-left: 8%;
+  width: 35%;
+  filter: saturate(0.8);
 }
 
 .other,.navItem{
-  cursor: none !important;
+  
   font-size: 1.5vw;
   padding: 1%;
   text-align: center;
@@ -180,8 +190,11 @@ a{
   color: #000;
   font-weight: bold;
 }
+.arrow{
+  animation: arrowBounce 1.5s infinite ease-in-out;
+}
 .link:hover > .arrow{
-    
+  animation-play-state: paused;
   transition: 150ms ease-in-out;
   padding-left:1.25% ;
 }
