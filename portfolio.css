@@ -168,22 +168,49 @@ body{
 
 @media only screen and (max-width:355px) {
     /* *** Mobile Standard 0 STARTS *** */
-    
+    .nav{
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #41ab7d;
+        display: flex;
+        top:0;
+        left: 0%;
+        justify-content: center;
+        align-items: center;
+    }
     
      /* XXX Mobile MAX 441 ENDS XXX */
    }
   
   
-  @media only screen and (max-width:441px)  {
+  @media only screen and (max-width:720px)  {
     /* *** Mobile Standard 0 STARTS *** */
-    .case{
-        flex-wrap: wrap;
+    .nav{
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #41ab7d;
         display: flex;
-        flex-direction: row;
-        align-items: start;
+        top:0;
+        left: 0%;
         justify-content: center;
-        padding: 1% 0% ;
-        margin:2% 0% ;
+        align-items: center;
+    }
+    .contentMobile{
+        display: block;
+        margin-top: 5%;
+    }
+    .content{
+        display: none;
+    }
+    .case{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0% 0% 10% 0%;
+        
 
     }
     .case:hover > .caseImage {
@@ -195,105 +222,31 @@ body{
     .caseImage{
         
         border-radius: 1.0vw;
-        width: 40vw;
-        margin: 0% 0%;
+        width: 95vw;
+        padding-bottom: 5%;
     }
     .caseDetails{
         
         display: flex;
         flex-direction: column;
-        font-size: 2.25vw;
-        margin: 2% 6%  0% 6%;
+        width: 80%;
+        font-size: 4vw;
+        
         
     }
     .caseTitle{
-        font-size: 2vw;
+        font-size: 8vw;
     }
     .caseLink{
-        
-        font-size: 1.8vw;
+        text-align: right;
+        padding-bottom: 5%;
+        font-size: 4vw;
     }
   
   }
-  
-  @media only screen and (min-width:441px) and  (max-width: 599px) {
-   /* *** Mobile Standard 441 STARTS *** */
-   .case{
-        
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        padding: 1% 0% ;
-        margin:2% 18% ;
-
-    }
-
-
-    .caseImage{
-        
-        border-radius: 1.0vw;
-        width: 25vw;
-        margin: 0% 2%;
-    }
-    .caseDetails{
-        
-        display: flex;
-        flex-direction: column;
-        font-size: 1.5vw;
-        margin: 0% 2%;
-        
-    }
-    .caseTitle{
-        font-size: 2vw;
-    }
-    .caseLink{
-        
-        font-size: 1.5vw;
-    }
-  
-   /* XXX Mobile MAX 600 ENDS XXX */
-  }
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (min-width: 600px) {
-      /* *** Mobile Standard 600 STARTS *** */
-    .case{
-        
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        padding: 1% 0% ;
-        margin:2% 20% ;
-
-    }
-
-
-    .caseImage{
-        
-        border-radius: 1.5vw;
-        width: 25vw;
-        margin: 0% 2%;
-    }
-    .caseDetails{
-        
-        display: flex;
-        flex-direction: column;
-        font-size: 1.5vw;
-        margin: 0% 2%;
-        
-    }
-    .caseTitle{
-        font-size: 2vw;
-    }
-    .caseLink{
-        
-        font-size: 1vw;
-    }
-       /* XXX Mobile 600 ENSD XXX */
-  }
-  
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 721px) {
     /* *** Desktop 768 STARTS *** */
     .case{
         
@@ -409,3 +362,13 @@ body{
     /* XXX Desktop 1200 ENDS XXX */
   }
   
+
+  .nav{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    top:0;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+  }

@@ -1,3 +1,6 @@
+.contentMobile{
+  display: none;
+}
 .contactDummy{
   color: white;
 }
@@ -118,7 +121,7 @@ b:hover{
   justify-items: center;
 }
 nav{
-  padding:1%;
+  
   display: flex;
   justify-content: center;
 }
@@ -135,6 +138,16 @@ padding: 4%;
 /* Extra small devices (phones, 345px and up) */
 @media only screen and (max-width:355px) {
   /* *** Mobile Standard 0 STARTS *** */
+  .nav{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    top:0;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+  }
    .other,.navItem{
      font-size: 5vw;
    }
@@ -168,6 +181,16 @@ padding: 4%;
 
 @media only screen and (max-width:441px) and (min-width:355px) {
   /* *** Mobile Standard 0 STARTS *** */
+  .nav{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    top:0;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+  }
   .other,.navItem{
     font-size: 4vw;
   }
@@ -198,6 +221,16 @@ padding: 4%;
 
 @media only screen and (min-width:441px) and  (max-width: 599px) {
  /* *** Mobile Standard 441 STARTS *** */
+ 
+ .nav{
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  top:0;
+  left: 0%;
+  justify-content: center;
+  align-items: center;
+}
  .other,.navItem{
   font-size: 4vw;
 }
@@ -229,6 +262,15 @@ nav{
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 600px) {
+ .nav{
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  top:0;
+  left: 0%;
+  justify-content: center;
+  align-items: center;
+}
     /* *** Mobile Standard 600 STARTS *** */
     .other,.navItem{
       font-size: 4vw ;
@@ -265,6 +307,15 @@ nav{
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   /* *** Desktop 768 STARTS *** */
+  .nav{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    top:0;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+  }
   .other,.navItem{
     font-size: 2.5vw ;
   }
@@ -297,6 +348,15 @@ nav{
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
  /* *** Desktop 992 STARTS *** */
+ .nav{
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  top:0;
+  left: 0%;
+  justify-content: center;
+  align-items: center;
+}
  .other,.navItem{
   font-size: 2vw !important;
 }
@@ -331,7 +391,17 @@ nav{
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  
   /* *** Desktop 1200 STARTS *** */
+  .nav{
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    top:0;
+    left: 0%;
+    justify-content: center;
+    align-items: center;
+  }
   .aboutTitle{
     font-size:5vw;
   }
