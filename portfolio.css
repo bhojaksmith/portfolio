@@ -109,9 +109,7 @@ body{
     color: #41ab7d;
     z-index: -1;
 }
-.content{
-    margin-top: 2% !important;
-}
+
 @media screen and (max-width: 991px) and (orientation: portrait) {
     .bb{
         padding :2%;
@@ -169,7 +167,7 @@ a{
     align-items: start;
     justify-content: space-between;
     padding: 1% 0% ;
-    margin:5% 23% ;
+    margin:2% 23% ;
 
 }
 
@@ -215,7 +213,7 @@ a{
     border:1px solid ;
 }
 .case:hover > .caseImage {
-    transform: scale(1.1);
+    transform: scale(1.09);
     /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
     filter: saturate(1);
 }
