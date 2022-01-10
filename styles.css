@@ -12,7 +12,7 @@
 body{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #67dba9;
   background: linear-gradient(to right,#67dba9,#41ab7d);
   font-family: 'Inter', sans-serif;
@@ -113,9 +113,7 @@ b:hover{
 nav{
   padding: 2%;
   display: flex;
-  justify-items: center;
-  display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
  .other,.navItem{
@@ -147,7 +145,7 @@ nav{
         
   .aboutContainer{
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-around !important;
     align-items: center;
     width: 150%;
   }
@@ -176,9 +174,10 @@ nav{
   }
         
   .aboutContainer{
+    
     flex-direction: column-reverse;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around !important;
     width: 150%;
   }
   .aboutInfo{
@@ -208,7 +207,7 @@ nav{
         
   .aboutContainer{
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 150%;
   }
