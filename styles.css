@@ -207,19 +207,19 @@ nav{
   }
         
   .aboutContainer{
-    flex-direction: column-reverse;
+    flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    width: 150%;
+    align-items: flex-start;
+    width: 80%;
   }
   .aboutInfo{
     width: 50%;  
   }
   .aboutTitle{
-    font-size:10vw;
+    font-size:4vw;
   }
 
   .other,.navItem,.aboutDescription{
-    font-size:3vw;
+    font-size:1.5vw;
   }
 }
