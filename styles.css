@@ -10,10 +10,16 @@
   100%{padding-left: 0%;}
 }
 body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #67dba9;
   background: linear-gradient(to right,#67dba9,#41ab7d);
   font-family: 'Inter', sans-serif;
   overflow:hidden;
+  margin: 0;
+  left: 0;
+  top: 0;
 }
 .cursor{
   z-index: 1;
@@ -25,13 +31,6 @@ body{
   height: 1vw; 
   border-radius: 100%;  
 }
-span{
-  text-decoration: none;
-}
-b{
-  color: black;
-}
-
 
 .bottomBar,.bganimation3,.bganimation2{
   display: none !important;
@@ -46,19 +45,22 @@ b{
 
 
 
-.other{
-  color:rgba(0,0,0,0.2);
-  transition: 250ms ease-in-out;
-}
 
 .other:hover{
   color:#000 !important;
 }
 
-a{
+b,a,span{
     text-decoration: none;
-    color: inherit;  
+    color: #000; 
     
+}
+a{
+  color: inherit;
+}
+
+b:hover{
+  text-decoration:underline;
 }
 .link{
   padding: 1%;
@@ -74,362 +76,150 @@ a{
   margin-left:1.25% ;
 }
 
-.aboutTitle{
-  transition: 300ms ease-in;
-}
-.about{
-  transition: 300ms ease-in;
-}
-b:hover{
-  text-decoration:underline;
-}
-.smithPhoto{
-  transform-style: preserve-3d;
-}
 
-
-
-.aboutCard{
-  position: absolute;
-}
-.aboutTitle{
-  font-family: 'Pacifico', cursive;
-}
-.about{
-  text-align: justify;
-  line-height:169%;
-}
-
-.imageCard{
+.aboutContainer{
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
   position: fixed;
   color: #fff;
   filter: saturate(.85);  
   bottom: 0;
+  width: 80%;
 }
-.topBar{
+.aboutInfo{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  margin: 2% 10% 0% 10%;
-  /* border :1px solid black; */
+  flex-direction: column;
+  text-align: justify;
+  width: 50%;  
 }
-.nav{
+.aboutTitle{
+  font-family: 'Pacifico', cursive;
+  transition: 300ms ease-in;
+  font-size:5vw;
+}
+
+.aboutDescription{
+  line-height:169%;
+  font-size:1.5vw;
+  
+  transition: 300ms ease-in;
+}
+.smithPhoto{
+  transform-style: preserve-3d;
+  margin-left: 5%;
+  width: 30%;
+  flex-shrink: 0;
+}
+nav{
+  padding: 2%;
   display: flex;
   justify-items: center;
-}
-nav{
-  
   display: flex;
   justify-content: center;
 }
 
-.other,.navItem{
+ .other,.navItem{
 
-text-align: left;
-font-weight: 600;
-font-size: 1.5vw;
-margin-right: 1vw; 
-padding: 4%; 
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-right: 1vw; 
+  padding: 4%; 
+  }
+  
+.other{
+  color:rgba(0,0,0,0.2) !important;
+  transition: 250ms ease-in-out;
 }
 
-/* Extra small devices (phones, 345px and up) */
-@media only screen and (max-width:355px) {
-  /* *** Mobile Standard 0 STARTS *** */
-  .nav{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    top:0;
-    left: 0%;
-    justify-content: center;
-    align-items: center;
-  }
-   .other,.navItem{
-     font-size: 5vw;
-   }
-   nav{
-     justify-content: start;
-   }
-   .aboutTitle{
-     font-size:12vw;
-   }
-   .about{
-     font-size:4.2vw;
-     width: 85%;  
-   }
-   .smithPhoto{
-     margin-left: 22%;
-     width: 75%;
-   }
-   .aboutCard{
-     position: absolute;
-     margin: -85% 0% 0% -5%;
-   }
- 
-   .imageCard{
-     display: block;
-     width: 90%;
-   }
- 
-   /* XXX Mobile MAX 441 ENDS XXX */
- }
-
-
-@media only screen and (max-width:441px) and (min-width:355px) {
-  /* *** Mobile Standard 0 STARTS *** */
-  .nav{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    top:0;
-    left: 0%;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 390px)  {
+  .cursor{
+    display: none;
   }
   .other,.navItem{
-    font-size: 4vw;
-  }
-  nav{
-    justify-content: start;
-  }
-  .aboutTitle{
-    font-size:11vw;
-  }
-  .about{
-    font-size:3.5vw;
-    width: 85%;  
+    margin-top: 2%; 
+    padding: 4%; 
   }
   .smithPhoto{
-    margin-left: 30%;
-    width: 65%;
+    margin-left: 5%;
+    width: 35%;
   }
-  .aboutCard{
-    position: absolute;
-    margin: -60% 0% 0% -5%;
-  }
-
-  .imageCard{
-    display: block;
-    width: 90%;
-  }
-}
-
-@media only screen and (min-width:441px) and  (max-width: 599px) {
- /* *** Mobile Standard 441 STARTS *** */
- 
- .nav{
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  top:0;
-  left: 0%;
-  justify-content: center;
-  align-items: center;
-}
- .other,.navItem{
-  font-size: 4vw;
-}
-nav{
-  justify-content: start;
-}
-.aboutTitle{
-  font-size:10vw;
-}
-.about{
-  font-size:2.8vw;
-  width: 60%;  
-}
-.smithPhoto{
-  margin-left: 50%;
-  width: 45%;
-}
-.aboutCard{
-  position: absolute;
-  margin: -40% 0% 0% -5%;
-}
-
-.imageCard{
-  display: block;
-  width: 90%;
-}
-
- /* XXX Mobile MAX 600 ENDS XXX */
-}
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (min-width: 600px) {
- .nav{
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  top:0;
-  left: 0%;
-  justify-content: center;
-  align-items: center;
-}
-    /* *** Mobile Standard 600 STARTS *** */
-    .other,.navItem{
-      font-size: 4vw ;
-    }
-    nav{
-      justify-content: start;
-    }
-    .aboutTitle{
-      font-size:9vw;
-    }
-    .about{
-      
-      font-size:2.5vw;
-      width: 55%;  
-    }
-    .smithPhoto{
-      margin-left: 48%;
-      width: 50%;
-    }
-    .aboutCard{
-      position: absolute;
-      margin: -15% 0% 0% -8%;
-    }
-
-    .imageCard{
-      display: block;
-      width: 90%;
-    }
-    
-     /* XXX Mobile 600 ENSD XXX */
-}
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  /* *** Desktop 768 STARTS *** */
-  .nav{
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    top:0;
-    left: 0%;
+        
+  .aboutContainer{
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    width: 150%;
+  }
+  .aboutInfo{
+    width: 50%;  
+  }
+  .aboutTitle{
+    font-size:10vw;
+  }
+
+  .other,.navItem,.aboutDescription{
+    font-size:4vw;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width:391px) {
+  .cursor{
+    display: none;
   }
   .other,.navItem{
-    font-size: 2.5vw ;
-  }
-  .aboutTitle{
-    font-size:7vw;
-  }
-  .about{
-    font-size:2.2vw;
+    margin-top: 2%; 
+    padding: 4%; 
   }
   .smithPhoto{
-    margin-left: -12%;
-    width: 52%;
+    margin-left: 5%;
+    width: 50%;
   }
-  .aboutCard{
-    margin:2% 0% 0% 45%;
-  }
-  
-  .about{
-    margin-top:2%;
-    width: 80%;  
-  }
-  
-  .imageCard{
-    width: 90%;
-  }
-  
-   /* XXX Desktop 768 STARTS XXX */
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
- /* *** Desktop 992 STARTS *** */
- .nav{
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  top:0;
-  left: 0%;
-  justify-content: center;
-  align-items: center;
-}
- .other,.navItem{
-  font-size: 2vw !important;
-}
-.aboutTitle{
-  font-size:5.65vw;
-}
-.about{
-  font-size:1.8vw;
-}
-.smithPhoto{
-  margin-left: 0%;
-  width: 38%;
-}
-.aboutCard{
-  margin:2% 0% 0% 45%;
-}
-
-.about{
-  margin-top:2%;
-}
-
-.imageCard{
-  width: 90%;
-}
-
-.topBar{
-  margin: 2% 10% 0% 10%;
-}
-
-/* XXX Desktop 992 ENDS XXX */
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  
-  /* *** Desktop 1200 STARTS *** */
-  .nav{
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    top:0;
-    left: 0%;
+        
+  .aboutContainer{
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    width: 150%;
+  }
+  .aboutInfo{
+    width: 50%;  
   }
   .aboutTitle{
-    font-size:5vw;
+    font-size:10vw;
   }
-  .about{
-    font-size:1.25vw;
+
+  .other,.navItem,.aboutDescription{
+    font-size:4vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:768px){
+  .cursor{
+    display: none;
+  }
+  .other,.navItem{
+    margin-top: 2%; 
+    padding: 4%; 
   }
   .smithPhoto{
     margin-left: 5%;
     width: 30%;
   }
-  
-  .aboutCard{
-    margin:2% 0% 0% 45%;
+        
+  .aboutContainer{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 150%;
   }
-  
-  .about{
-    margin-top:2%;
-    width: 75%;  
+  .aboutInfo{
+    width: 50%;  
   }
-  
-  .imageCard{
-    width: 80%;
+  .aboutTitle{
+    font-size:10vw;
   }
 
-  .topBar{
-    margin: 2% 10% 0% 10%;
+  .other,.navItem,.aboutDescription{
+    font-size:3vw;
   }
-  
-  
-  /* XXX Desktop 1200 ENDS XXX */
 }

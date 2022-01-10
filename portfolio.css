@@ -1,4 +1,7 @@
-
+body{
+    display: flex;
+    flex-direction: column;
+}
 ::-webkit-scrollbar {
     width: 1vw;
   }
@@ -33,16 +36,6 @@ body{
         /* opacity: 0.2 !important; */
       z-index:1 !important;
   }
-.bganimation{
-    display: none;
-    top:0;
-    position: absolute;
-    transform: rotate(-90deg) !important;
-    pointer-events: none;
-    z-index: -1;
-  
-    height: 210%;
-}
 
 .bottomBar{
     display: none;
@@ -81,9 +74,10 @@ body{
   }
 
 .case{
-    border-radius: 1vw;
+    border-radius: 1.5vw;
     transition: 300ms ease-in-out;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: #f0f0f0; */
     color: rgba(0,0,0,0.4);
     display: flex;
     align-items: start;
@@ -161,6 +155,7 @@ body{
 }
 .case:hover{
     box-shadow: 8px 8px 24px rgba(0,0,0,0.2); 
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 
@@ -168,6 +163,10 @@ body{
 
 @media only screen and (max-width:355px) {
     /* *** Mobile Standard 0 STARTS *** */
+    .content{
+        margin-top: 5%;
+    }
+    
     .nav{
         width: 100%;
         position: fixed;
@@ -197,13 +196,10 @@ body{
         justify-content: center;
         align-items: center;
     }
-    .contentMobile{
-        display: block;
+    .content{
         margin-top: 5%;
     }
-    .content{
-        display: none;
-    }
+    
     .case{
         display: flex;
         flex-direction: column;
@@ -324,8 +320,11 @@ body{
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
+
     /* *** Desktop 1200 STARTS *** */
-   
+   .content > .case:nth-child(odd) {
+    flex-direction: row-reverse ;
+}
     .case{
         
         display: flex;
