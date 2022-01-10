@@ -10,9 +10,10 @@
   100%{padding-left: 0%;}
 }
 body{
+  flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #67dba9;
   background: linear-gradient(to right,#67dba9,#41ab7d);
   font-family: 'Inter', sans-serif;
