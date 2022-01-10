@@ -9,7 +9,7 @@
 // });
 
 
-const mediaQuery = window.matchMedia('(min-width: 500px)')
+const mediaQuery = window.matchMedia('(min-width: 768px)')
 
 if(mediaQuery.matches){
   
