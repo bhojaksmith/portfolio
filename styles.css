@@ -34,6 +34,13 @@ body{
   justify-content: space-between;
   background-color: #67dba9;
   background: linear-gradient(to right,#67dba9,#41ab7d);
+  background-image: url('/assets/background.svg');
+  
+  background-attachment: fixed;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+
   font-family: 'Inter', sans-serif;
   overflow:hidden;
   margin: 0;

@@ -335,16 +335,18 @@ body{
         filter: saturate(1);
     }
     /* *** Desktop 1200 STARTS *** */
-   .content > .case:nth-child(odd) {
+   .content > .case:nth-child(even) {
     flex-direction: row-reverse ;
+    margin-top: 10%;
 }
     .case{
         
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-bottom: 1% ;
-        margin:1% 5% 3% 5%;
+        padding-bottom: 0% ;
+        margin:1% 3% 3% 3%;
+        height: fit-content;
     
     }
     
