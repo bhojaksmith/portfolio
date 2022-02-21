@@ -2,9 +2,11 @@
 body{
     display: flex;
     flex-direction: column;
+    
 }
 ::-webkit-scrollbar {
-    width: 1vw;
+    width: 0.5vw;
+
   }
   
   /* Track */
@@ -14,15 +16,17 @@ body{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-      border-radius:1vw ;
+    border-radius:0vw ;
     background: #67dba9; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(255,255,255,0.5); 
+    cursor: move;
   }
 body{
+    
     overflow: auto;
     background-color: #f0f0f0 !important;
     font-family: 'Inter', sans-serif;
@@ -31,11 +35,11 @@ body{
     
 }
     .content{
-        
+        overflow-x: hidden;
         overflow-y: visible;
         background-color: rgba(0,0,0,0) !important;
         /* opacity: 0.2 !important; */
-      z-index:1 !important;
+      z-index:3 !important;
   }
 
 .bottomBar{
@@ -51,7 +55,7 @@ body{
     justify-content:space-between;
     padding: 2% 10%;
     background-color: #f0f0f0;    
-    z-index: 1;
+    z-index: -1;
 }
 
 .nav{
@@ -83,7 +87,7 @@ body{
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding: 1% 0% ;
+    
     margin:2% 23% ;
 
 }
@@ -93,6 +97,8 @@ body{
     transition: 300ms ease-in-out;
     width: 25vw;
     margin: 0% 2%;
+    padding-bottom: 2%;
+
 }
 .caseDetails{
     
@@ -113,7 +119,7 @@ body{
 .caseDescription{
     padding-bottom: 10%; 
     transition: 300ms ease-in-out;
-    text-align: justify;
+    text-align: justify;    
 }
 .caseLink{
     font-style: italic;
@@ -203,8 +209,8 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin: 0% 0% 10% 0%;
+        justify-content: space-around;
+        margin:0% 2% 3% 3%;
         
 
     }
@@ -228,7 +234,6 @@ body{
         font-size: 8vw;
     }
     .caseLink{
-        margin-left: 50%;
         padding-bottom: 5%;
         font-size: 4vw;
     }
@@ -238,33 +243,34 @@ body{
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 721px) {
     /* *** Desktop 768 STARTS *** */
+    .content{
+        display: grid;
+        grid-template-columns: auto auto;   
+    }   
     .case:hover > .caseImage {
         transform: scale(1.09);
-        /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
+        
         filter: saturate(1);
     }
     .case{
         
         display: flex;
+        flex-direction: column !important;
         align-items: start;
         justify-content: space-between;
-        padding: 1% 0% ;
-        margin:2% 23% ;
+        padding: 2% 0% !important ;
+        margin:0% 2% 3% 3%;
 
     }
 
 
-    .caseImage{
-        
-        width: 25vw;
-        margin: 0% 2%;
-    }
     .caseDetails{
-        
+        width: 100%;
         display: flex;
         flex-direction: column;
         font-size: 1.25vw;
         margin: 0% 2%;
+        
         
     }
     .caseTitle{
@@ -293,7 +299,7 @@ body{
         align-items: start;
         justify-content: space-between;
         padding: 1% 0% ;
-        margin:2% 23% ;
+        margin:0% 2% 3% 3%;
 
     }
 
@@ -335,24 +341,25 @@ body{
     .case{
         
         display: flex;
-        align-items: start;
+        align-items: center;
         justify-content: space-between;
-        padding: 1% 0% ;
-        margin:2% 23% ;
+        padding-bottom: 1% ;
+        margin:1% 5% 3% 5%;
     
     }
     
     
     .caseImage{
         
-        width: 25vw;
-        margin: 0% 2%;
+        width: 100%;
+        margin: 0% 0%;
     }
     .caseDetails{
         
-        width: 45%;
+        width: 90%;
         display: flex;
         flex-direction: column;
+
         font-size: 1vw;
         margin: 0% 2%;
         
@@ -361,7 +368,6 @@ body{
         font-size: 2vw;
     }
     .caseLink{
-        
         font-size: 1vw;
     }
     /* XXX Desktop 1200 ENDS XXX */

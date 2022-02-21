@@ -4,6 +4,22 @@
 .contactDummy{
   color: white;
 }
+.swal-overlay {
+  background-color: rgba(0,0,0, 0.45) !important;
+}
+.swal-modal {
+  background-color: #67dba9
+}
+.swal-button {
+  transition: 300ms ease-in-out;
+  background-color: white;
+  color: #41ab7d;
+}
+.swal-button:hover{
+  background-color: white !important;
+  color: #41ab7d;
+  opacity: .8;
+}
 @keyframes arrowBounce{
   0%{padding-left:0%}
   50%{padding-left: 1.25%;}
