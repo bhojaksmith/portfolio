@@ -117,7 +117,7 @@ function Footrax(){
         break;
       case "casestudy":
         
-        window.open("/assets/case/Footrax.pdf");
+        window.open("https://bhojaksmith.github.io/portfolio//assets/case/Footrax.pdf");
         break;
       default:
         break;
@@ -126,10 +126,10 @@ function Footrax(){
   
 }
 function Festinger(){
-  window.open("/assets/case/FestingerVault.pdf");
+  window.open("https://bhojaksmith.github.io/portfolio//assets/case/FestingerVault.pdf");
 }
 function Better(){
-  window.open("/assets/case/BetterBarter.pdf");
+  window.open("https://bhojaksmith.github.io/portfolio//assets/case/BetterBarter.pdf");
 }
 function astro(){
   swal("View Astro Energy Guru?", {
@@ -154,7 +154,7 @@ function astro(){
         break;
    
       case "casestudy":
-        window.open("/assets/case/AstroEnergyGuru.pdf");
+        window.open("https://bhojaksmith.github.io/portfolio//assets/case/AstroEnergyGuru.pdf");
 
         break;
       default:
@@ -199,7 +199,7 @@ function neofantasy(){
         break;
       case "casestudy":
         
-        window.open("/assets/case/neofantasy.pdf");
+        window.open("https://bhojaksmith.github.io/portfolio//assets/case/neofantasy.pdf");
         break;
       default:
         break;
@@ -234,7 +234,7 @@ function inforida(){
         break;
       case "casestudy":
         
-        window.open("/assets/case/inforida.pdf");
+        window.open("https://bhojaksmith.github.io/portfolio//assets/case/inforida.pdf");
         break;
       default:
         break;
