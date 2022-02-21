@@ -82,6 +82,7 @@ body{
     border-radius: 1.5vw;
     transition: 300ms ease-in-out;
     background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
     /* background-color: #f0f0f0; */
     color: rgba(0,0,0,0.4);
     display: flex;
@@ -337,7 +338,7 @@ body{
     /* *** Desktop 1200 STARTS *** */
    .content > .case:nth-child(even) {
     flex-direction: row-reverse ;
-    margin-top: 10%;
+    margin-top: 5%;
 }
     .case{
         

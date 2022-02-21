@@ -8,12 +8,17 @@
   background-color: rgba(0,0,0, 0.45) !important;
 }
 .swal-modal {
-  background-color: #67dba9
+  border-radius: 2%;
+  background-color: #67dba9;
+  
 }
 .swal-button {
   transition: 300ms ease-in-out;
   background-color: white;
   color: #41ab7d;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .swal-button:hover{
   background-color: white !important;
