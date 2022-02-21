@@ -1,3 +1,4 @@
+
 body{
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@ body{
   }
 body{
     overflow: auto;
-    background-color: #f0f0f0;
+    background-color: #f0f0f0 !important;
     font-family: 'Inter', sans-serif;
    
     margin: 0;
@@ -90,10 +91,8 @@ body{
 
 .caseImage{
     transition: 300ms ease-in-out;
-    border-radius: 1.5vw;
     width: 25vw;
     margin: 0% 2%;
-    filter: saturate(0);
 }
 .caseDetails{
     
@@ -127,7 +126,7 @@ body{
     border:1px solid ;
 }
 .case:hover > .caseImage {
-    transform: scale(1.09);
+    transform: scale(1.08);
     /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
     filter: saturate(1);
 }
@@ -217,7 +216,6 @@ body{
 
     .caseImage{
         
-        border-radius: 1.0vw;
         width: 95vw;
         padding-bottom: 5%;
     }
@@ -257,7 +255,6 @@ body{
 
     .caseImage{
         
-        border-radius: 1.5vw;
         width: 25vw;
         margin: 0% 2%;
     }
@@ -296,7 +293,6 @@ body{
 
     .caseImage{
         
-        border-radius: 1.5vw;
         width: 25vw;
         margin: 0% 2%;
     }
@@ -338,7 +334,6 @@ body{
     
     .caseImage{
         
-        border-radius: 1.5vw;
         width: 25vw;
         margin: 0% 2%;
     }
