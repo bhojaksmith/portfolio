@@ -125,11 +125,11 @@ body{
 .caseBox{
     border:1px solid ;
 }
-.case:hover > .caseImage {
-    transform: scale(1.08);
-    /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
-    filter: saturate(1);
-}
+/* .case:hover > .caseImage {
+    transform: scale(1.08); 
+     box-shadow: 8px 8px 24px rgba(0,0,0,0.2); 
+     filter: saturate(1);
+}*/
 .case:hover >  .caseDetails  { 
     color: #000;
 }
@@ -208,11 +208,7 @@ body{
         
 
     }
-    .case:hover > .caseImage {
-        transform: scale(1.09);
-        /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
-        filter: saturate(1);
-    }
+
 
     .caseImage{
         
@@ -242,6 +238,11 @@ body{
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 721px) {
     /* *** Desktop 768 STARTS *** */
+    .case:hover > .caseImage {
+        transform: scale(1.09);
+        /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
+        filter: saturate(1);
+    }
     .case{
         
         display: flex;
@@ -279,7 +280,13 @@ body{
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
+
    /* *** Desktop 992 STARTS *** */
+   .case:hover > .caseImage {
+    transform: scale(1.08);
+    /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
+    filter: saturate(1);
+}
    .case{
         
         display: flex;
@@ -316,7 +323,11 @@ body{
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-
+    .case:hover > .caseImage {
+        transform: scale(1.09);
+        /* box-shadow: 8px 8px 24px rgba(0,0,0,0.2); */
+        filter: saturate(1);
+    }
     /* *** Desktop 1200 STARTS *** */
    .content > .case:nth-child(odd) {
     flex-direction: row-reverse ;
